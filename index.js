@@ -4,9 +4,6 @@ import { useColorScheme, StyleSheet } from 'react-native'
 export const ThemeContext = createContext(null)
 
 export const ThemeProvider = (props) => {
-    //TODO: Validate that the passed in props.theme has a shape of
-    // { colors, spacing, variants }
-    //validate that theme was passed to Provider
     const colorScheme = useColorScheme()
 
     const theme = useMemo(() => {
@@ -28,7 +25,6 @@ export const ThemeProvider = (props) => {
 }
 
 export const useTheme = (callback) => {
-    //TODO: validate the argument passed is a function that returns an object
     const context = useContext(ThemeContext)
     const { theme } = context
     const styleObj = callback(theme)

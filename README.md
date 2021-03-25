@@ -6,4 +6,4 @@
 -   validate function that goes into useTheme hook
 -   find alternative to deepcopy besides JSON.parse(JSON.stringify(obj))
 -   update this readme to show how to use
--
+-   update package.json. mimic https://github.com/codemotionapps/react-native-dynamic/blob/master/library/package.json

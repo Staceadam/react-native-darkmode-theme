@@ -5,7 +5,9 @@
         "allowSyntheticDefaultImports": true,
         "jsx": "react",
         "lib": ["es6"],
+        "outDir": "./lib",
         "moduleResolution": "node",
+        "declaration": true,
         "target": "esnext"
     }
 }

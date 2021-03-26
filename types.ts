@@ -1,4 +1,4 @@
-export type ThemeObj = {
+export interface ThemeObj {
     colors: Object
     spacing: Object
     variants?: Object
@@ -7,5 +7,5 @@ export type ThemeObj = {
 export type Theme = {
     colorScheme: String
     theme: ThemeObj
-    styles: Object
+    styles: any
 }
